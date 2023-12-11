@@ -12,8 +12,6 @@ def partie1(lignes):
     return somme
 
 
-
-
 def partie2(lignes):
     print("hello")
 
