@@ -11,12 +11,12 @@ def partie1(lignes):
         chaine_red = re.findall(pattern_red, ligne)
         chaine_bleu = re.findall(pattern_blue, ligne)
         chaine_green = re.findall(pattern_green, ligne)
-        somme_red = max(int(item.split()[0]) for item in chaine_red)
-        somme_green = max(int(item.split()[0]) for item in chaine_green)
-        somme_blue = max(int(item.split()[0]) for item in chaine_bleu)
+        max_red = max(int(item.split()[0]) for item in chaine_red)
+        max_green = max(int(item.split()[0]) for item in chaine_green)
+        max_blue = max(int(item.split()[0]) for item in chaine_bleu)
         i += 1
 
-        if somme_green <= 13 and somme_blue <= 14 and somme_red <= 12:
+        if max_green <= 13 and max_blue <= 14 and max_red <= 12:
             somme += i
 
     return somme
